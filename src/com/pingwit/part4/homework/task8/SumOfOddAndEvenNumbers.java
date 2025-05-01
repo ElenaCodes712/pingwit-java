@@ -15,7 +15,7 @@ public class SumOfOddAndEvenNumbers {
         sum = sumEven + sumOdd;
 
         System.out.println("Sum of odd numbers is: " + sumOdd);
-        System.out.println("Sum of even nubmers is: " + sumEven);
+        System.out.println("Sum of even nubmers is: " + sumEven); // nubmers -> опечатка
         System.out.println("Sum of all numbers is: " + sum);
     }
 }
