@@ -1,7 +1,8 @@
 package com.pingwit.part6.homework.task4;
 
-import java.lang.reflect.Array;
+import java.lang.reflect.Array; // этот импорт можно удалить
 
+// очень красиво распечатала, это не сарказм :)
 public class MultiplicationTable {
     public static void main(String[] args) {
 

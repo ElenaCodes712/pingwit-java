@@ -19,7 +19,7 @@ public class SumMinMax {
         int max = numbers[0];
 
         for (int number : numbers) {
-            sum += number;
+            sum += number; // ты можешь выполнить эту операцию 1 раз за пределами цикла сложив evem+odd, так будет оптимальнее
             if (number < min) {
                 min = number;
             }
@@ -31,7 +31,7 @@ public class SumMinMax {
         System.out.println("The sum of numbers is: " + sum);
         System.out.println("The smallest numbers is: " + min);
         System.out.println("The biggest numbers is: " + max);
-
-
+// лишняя строка, давай удалим
+// лишняя строка, давай удалим
     }
 }
