@@ -1,4 +1,4 @@
-package com.pingwit.part6.homework;
+package com.pingwit.part6.homework.task8;
 
 public class LongestSequence {
     public static void main(String[] args) {
