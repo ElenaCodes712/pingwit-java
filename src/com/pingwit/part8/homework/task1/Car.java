@@ -1,9 +1,9 @@
 package com.pingwit.part8.homework.task1;
 
 public class Car {
-    String brand;
-    String model;
-    int doors;
+    String brand; // добавь модификатор доступа private, а доступ к полям класса получаешь через getters/setter, они у тебя есть уже
+    String model; // добавь модификатор доступа private
+    int doors; // добавь модификатор доступа private
 
     public Car(String brand, String model, int doors) {
         this.brand = brand;

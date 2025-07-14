@@ -8,10 +8,10 @@ public class CarArray {
                 new Car("Volkswagen", "T-Roc", 4),
         };
 
-        openAudiDoors(cars);
+        openAudiDoors(cars); // openAudiDoors -> openDoors и в метод добавь String carBrand, получится openDoors(String carBrand, Car[] cars)
     }
 
-    public static void openAudiDoors(Car[] cars) {
+    public static void openAudiDoors(Car[] cars) { // не критично, но здесь тоже будет хорошим решением модификатор private. Если метод не нужен для внешнего использования, делай его private
         for (Car car : cars) {
             if (car.brand.equals("Audi")) {
                 System.out.println(car);

@@ -20,7 +20,7 @@ public class HarvestStatisticService {
 
                 for (int i = 0; i < uniqueCount; i++) {
                     HarvestStatistic current = temp[i];
-                    if (current.getPlant().equals(currentPlant)) {
+                    if (current.getPlant().equals(currentPlant)) { // current и currentPlant очень близкие названия и это путает. Как насчет current -> groupedPlant, plantStatistic, countedPlant?
                         current.setTotalWeight(current.getTotalWeight().add(harvestWeight));
                         found = true;
                         break;
@@ -32,7 +32,7 @@ public class HarvestStatisticService {
             }
         }
         HarvestStatistic[] totalWeightPerPlant = new HarvestStatistic[uniqueCount];
-        for (int i = 0; i < uniqueCount; i++) {
+        for (int i = 0; i < uniqueCount; i++) { // попробуй заменить цикл с копированием на вызов метода System.arrayCopy()
             totalWeightPerPlant[i] = temp[i];
         }
         return totalWeightPerPlant;
