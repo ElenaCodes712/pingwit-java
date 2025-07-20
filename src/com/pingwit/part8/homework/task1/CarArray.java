@@ -13,7 +13,7 @@ public class CarArray {
 
     public static void openAudiDoors(Car[] cars) { // не критично, но здесь тоже будет хорошим решением модификатор private. Если метод не нужен для внешнего использования, делай его private
         for (Car car : cars) {
-            if (car.brand.equals("Audi")) {
+            if (car.getBrand().equals("Audi")) {
                 System.out.println(car);
                 car.openDoors();
             }
