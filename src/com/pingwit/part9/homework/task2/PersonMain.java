@@ -9,7 +9,7 @@ public class PersonMain {
                 new Person("Никита", "Добрый", 1979, Gender.MALE, MaritalStatus.MARRIED),
         };
 
-        PersonDataCheck dataCheck = new PersonDataCheck();
+        PersonDataCheckService dataCheck = new PersonDataCheckService();
         for (Person person : persons) {
             dataCheck.datingSuggestion(person);
         }
