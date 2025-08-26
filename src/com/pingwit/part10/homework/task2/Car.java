@@ -10,7 +10,7 @@ public class Car {
     public Car(Engine engine, Gearbox gearbox) {
         this.engine = engine;
         this.gearbox = gearbox;
-        this.speed = 0;
+        this.speed = 0; // а что будет если удалить эту строку?
     }
 
     public void startEngine() {
@@ -21,6 +21,7 @@ public class Car {
         engine.stop();
     }
 
+    //у автомобиля есть методы startEngine, stopEngine. Еще необходимо добавить управление коробкой, например, shiftUp и shiftDown
     public void changeSpeed() {
         int gear = gearbox.getCurrentGear();
         speed = gear * SPEED_PER_GEAR;
@@ -34,7 +35,7 @@ public class Car {
     public void drive() {
         if (!engine.isRunning()) {
             System.out.println("Please start the engine");
-            return;
+            return; // что будет если отсюда убрать return?
         } else {
             changeSpeed();
         }

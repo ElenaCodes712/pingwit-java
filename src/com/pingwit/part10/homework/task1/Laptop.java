@@ -10,7 +10,7 @@ public class Laptop implements Computer {
     @Override
     public void turnOff() {
         System.out.println("Your laptop is turned off");
-
+// лишняя строка, давай удалим
     }
 
     @Override

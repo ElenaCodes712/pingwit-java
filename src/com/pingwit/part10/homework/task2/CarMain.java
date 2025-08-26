@@ -6,6 +6,10 @@ public class CarMain {
         Gearbox gearbox = new Gearbox();
         Car car = new Car(engine, gearbox);
 
+        /*Управление двигателем и коробкой только через методы автомобиля. Представь что у тебя
+         Car car = new Car(new Engine(), new Gearbox());
+         Получается нету прямых ссылок на engine и gearbox, а управлять автомобилем надо :)
+         */
         car.drive();
         car.startEngine();
         car.drive();

@@ -13,7 +13,7 @@ public class Engine {
     }
 
     public void stop() {
-        if (!engineIsRunning) {
+        if (!engineIsRunning) { // старайся избегать инверсии т.е. использовать engineIsRunning вместо !engineIsRunning
             System.out.println("Engine is already stopped");
         } else {
             engineIsRunning = false;
