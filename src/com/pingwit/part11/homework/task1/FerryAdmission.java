@@ -10,8 +10,9 @@ public class FerryAdmission {
             totalWeight += v.getWeight();
         }
 
-        boolean allowed = (totalPassengers <= 50) && (totalWeight < 15);
+        boolean allowed = (totalPassengers <= 50) && (totalWeight < 15);//магические числа в константы класса
 
+        // блок if/else перенеси в метод main() в котором используешь результат этого метода
         if (allowed) {
             System.out.println("Рейс разрешён");
         } else {

@@ -15,6 +15,6 @@ public class TransportMain {
 
         FerryAdmission admission = new FerryAdmission();
         admission.check(checkIn);
-
+// лишняя строка, давай удалим
     }
 }
