@@ -13,9 +13,9 @@ public class TicketOffice {
             //давай вынесем все магические числа в константы класса
             if (v.getType() == VehicleType.TRUCK) {
                 totalPayment += 30;
-            } else if (v.getType() == VehicleType.PASSENGER & v.getPassengers() <= 2) {
+            } else if (v.getType() == VehicleType.PASSENGER & v.getPassengers() <= 2) { // лучше всегда использовать &&
                 totalPayment += 10;
-            } else if (v.getType() == VehicleType.PASSENGER & v.getPassengers() > 2) {
+            } else if (v.getType() == VehicleType.PASSENGER & v.getPassengers() > 2) { // лучше всегда использовать &&
                 totalPayment += 15;
             } else {
                 throw new IllegalArgumentException("Unknown vehicle type");
