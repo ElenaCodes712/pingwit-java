@@ -14,7 +14,8 @@ public class TransportMain {
         office.calculatePayment(checkIn);
 
         FerryAdmission admission = new FerryAdmission();
-        admission.check(checkIn);
-// лишняя строка, давай удалим
+        boolean allowed = admission.check(checkIn);
+
+        System.out.println(allowed ? "Рейс разрешён" : "Рейс запрещён" );
     }
 }
