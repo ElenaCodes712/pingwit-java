@@ -6,6 +6,7 @@ public class TicketOffice {
     public void calculatePayment(Vehicle[] vehicles) {
         int totalPassengers = 0;
         int totalPayment = 0;
+        //Константы тарифов лучше сделать private static final на уровне класса, а не внутри метода.
         final int PAYMENT_TRUCK = 30;
         final int PAYMENT_PASSENGER = 10;
         final int PAYMENT_PASSENGER_OPTION_TWO = 15;
@@ -20,7 +21,7 @@ public class TicketOffice {
             } else if (v.getType() == VehicleType.PASSENGER && v.getPassengers() > 2) {
                 totalPayment += PAYMENT_PASSENGER_OPTION_TWO;
             } else {
-                throw new IllegalArgumentException("Unknown vehicle type");
+                throw new IllegalArgumentException("Unknown vehicle type");//Исключение делать информативнее: добавить тип.
             }
         }
 

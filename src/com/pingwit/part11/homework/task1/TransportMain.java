@@ -1,7 +1,9 @@
 package com.pingwit.part11.homework.task1;
 
+// отформатируй код
 public class TransportMain {
     public static void main(String[] args) {
+        // в данной ситуации не критично, но хотелось бы красивые названия переменных
         Vehicle v1 = new Vehicle("AB-123", VehicleType.PASSENGER, 2, 1.8);
         Vehicle v2 = new Vehicle("AG-598", VehicleType.TRUCK, 1, 7.5);
         Vehicle v3 = new Vehicle("RT-529", VehicleType.PASSENGER, 4, 1.5);
