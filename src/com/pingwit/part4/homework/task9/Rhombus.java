@@ -2,7 +2,7 @@ package com.pingwit.part4.homework.task9;
 
 public class Rhombus {
     public static void main(String[] args) {
-        int height = 8;
+        int height = 7;
         int center = height / 2;
 
         for (int i = 0; i < height; i++) {
