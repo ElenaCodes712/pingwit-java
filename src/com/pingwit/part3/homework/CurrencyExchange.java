@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class CurrencyExchange {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Enter the dollar amount: ");
@@ -12,14 +13,14 @@ public class CurrencyExchange {
         System.out.println("Enter the desired currency: (1 = Euro, 2 = Zloty, 3 = Ruble)");
         int currencyId = scanner.nextInt();
 
-        double Euro = 0.95;
-        double Zloty = 4.01;
-        double Ruble = 91;
+        double euro = 0.95;
+        double zloty = 4.01;
+        double ruble = 91;
 
         switch (currencyId){
-            case 1 -> System.out.println(amountInDollars * Euro); // 0,96 - это магическое_число, т.е. сразу непонятно что это такое. Такие числа стоит выносить в отдельную переменную, например, eurRate
-            case 2 -> System.out.println(amountInDollars * Zloty); // магическое_число
-            case 3 -> System.out.println(amountInDollars * Ruble); // магическое_число
+            case 1 -> System.out.println(amountInDollars * euro);
+            case 2 -> System.out.println(amountInDollars * zloty);
+            case 3 -> System.out.println(amountInDollars * ruble);
             default -> System.out.println("Unexpected currency");
         }
     }

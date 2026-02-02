@@ -4,7 +4,7 @@ import java.sql.SQLOutput;
 
 public class SwitchExample {
     public static void main(String[] args) {
-        int number = 14;
+        int number = 7;
 
         switch (number) {
             case 1:

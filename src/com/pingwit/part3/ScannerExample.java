@@ -14,5 +14,6 @@ public class ScannerExample {
 
         System.out.println("Your name: " + name);
         System.out.println("Your age: " + age);
+
     }
 }
