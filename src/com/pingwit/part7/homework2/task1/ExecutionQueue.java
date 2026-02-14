@@ -5,11 +5,11 @@ public class ExecutionQueue {
     static {
         msg="static block";
         System.out.println("Static");
-    }
+    } //добавь абзаца между блоками
     {
         msg="regular init block";
         System.out.println("Not static");
-    }
+    } // сюда тоже абзац
     public ExecutionQueue() {
         msg="constructor value";
     }
