@@ -15,8 +15,8 @@ public class Car {
         return brand;
     }
 
-    public void openAudiDoors() {
-        if (!"Audi".equals(brand)) {
+    public void openAudiDoors() {//твой Car может быть не только Audi, но и, например, BMW, поэтому просто openDoors()
+        if (!"Audi".equals(brand)) { // а вот этот if() с проверкой на Audi стоит перенести в класс CarArray внутрь цикла вызова метода открытия дверей
             return;
         } else {
             System.out.println(brand + " " + model + ":");

@@ -30,7 +30,7 @@ public class House {
     }
 
     public void turnOnHeating() {
-        if (floors >= 5 && residents >= 10) {
+        if (floors >= 5 && residents >= 10) {//5 и 10 это хорошие кандидаты на аргументы метода, чтобы можно было в дальнейшем включить отопление для домов с другими параметрами
             heatingOn = true;
             System.out.println("В доме типа " + getHouseType().getType() + " было включено отопление.");
         }
