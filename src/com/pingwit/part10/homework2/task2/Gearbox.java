@@ -10,7 +10,7 @@ public class Gearbox {
             System.out.println("You have already the maximum gear");
         } else {
             currentGear++;
-            System.out.println("You shifted  up into " + currentGear + " gear");
+            System.out.println("You shifted  up into " + currentGear + " gear");//Между слоами shifted и up двойной пробел
         }
     }
 

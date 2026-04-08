@@ -13,7 +13,7 @@ public class Engine {
     }
 
     public void stopTheEngine() {
-        if (engineIsRunning) {
+        if (engineIsRunning) {//Здесь проблемка. Если двигатель работает, то мы НЕ выключаем его, хотя выводим на экран сообщение об остановке.
             System.out.println("The engine is stopped");
         } else {
             engineIsRunning = false;
