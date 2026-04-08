@@ -3,8 +3,9 @@ package com.pingwit.part10.homework2.task1;
 public class ComputerMain {
     public static void main(String[] args) {
 
-        PersonalComputer personalComputer = new PersonalComputer(); // PersonalComputer personalComputer -> Computer personalComputer. Твой вариант не ошибка, но это good practice использовать интерфейс в типе переменной
-        WorkComputer workComputer = new WorkComputer();// WorkComputer workComputer -> Computer workComputer.
+        Computer personalComputer = new PersonalComputer();
+        Computer workComputer = new WorkComputer();
+
 
         personalComputer.turnOn();
         personalComputer.turnOff();
